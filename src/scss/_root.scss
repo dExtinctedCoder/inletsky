@@ -1,2 +1,6 @@
 // root entry point for import of all component style file
-@import '../pages/home/home.scss';
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+}
