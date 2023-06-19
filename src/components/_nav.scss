@@ -1,0 +1,92 @@
+@import '../scss/variables';
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  font-size: $text-md;
+  font-weight: $font-medium;
+  padding: 36px 44px;
+  &>.logobox {
+    width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+  &>nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    span {
+      display: block;
+      color: inherit;
+      cursor: pointer;
+      font-size: inherit;
+      font-weight: inherit;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 3px;
+      &:focus {
+        outline: 3px solid $red;
+        border-radius: 5px;
+      }
+    }
+  }
+  &>.ctabox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    a {
+      background: none;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      background: transparent;
+      border: 2px solid transparent;
+      padding: 7px 31px;
+      text-decoration: none;
+      position: relative;
+      border-radius: 49px;
+      text-transform: uppercase;
+      &:first-child {
+        &:focus, &:active {
+          border: none;
+          outline: 0;
+          box-shadow: 0 0 20px $red;
+          background: rgb(224, 62, 62, 0.1);
+        }
+      }
+      &:last-child {
+        background: $red;
+        border: 2px solid $red;
+        &:focus, &:active {
+          outline: 3px solid $white;
+        }
+      }
+    }
+  }
+  &>.hamburger {
+    display: none;
+  }
+
+  @media screen and (max-width: 980px) {
+    padding: 24px 16px;
+    &>nav, &>.ctabox {
+      display: none;
+    }
+    &>.logobox {
+      width: 60px;
+    }
+    &>.hamburger {
+      cursor: pointer;
+      display: block;
+      &:focus, &:hover {
+        color: $red;
+      }
+    }
+  }
+}
