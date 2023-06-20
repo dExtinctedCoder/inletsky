@@ -1,12 +1,12 @@
-import Nav from '../../components/nav'
+import Hero from '../../components/hero'
 import './_home.scss'
 
 // component for landing page
 const Home = () => {
   return (
-    <div>
-      <Nav />
-    </div>
+    <section className='homepage'>
+      <Hero />
+    </section>
   )
 }
 
