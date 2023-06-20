@@ -5,6 +5,22 @@ import RAY from './assets/Group289.png'
 import SKY from './assets/Rectangle130.png'
 import GLOBE from './assets/Group290.png'
 
+import NewYorkTimes from './assets/TNYT.png'
+import KFC from './assets/kfc.png'
+import CNN from './assets/cnn.png'
+import WordPress from './assets/wordpress.png'
+import YAHOO from './assets/yahoo.png'
+import UNESCO from './assets/unesco.png'
+import TABLEUA from './assets/tableau.png'
+import TheWeatherChannel from './assets/twc.png'
+import ESPN from './assets/espn.png'
+import FC from './assets/fc.png'
+import AllTrails from './assets/alltrails.png'
+import OneSoil from './assets/onesoil.png'
+import ReiCoop from './assets/rei.png'
+import ANCESTRY from './assets/ancestry.png'
+import IMPOSSIBLE from './assets/vector.png'
+
 // component for landing page
 const Home = () => {
   const style = {
@@ -34,6 +50,28 @@ const Home = () => {
         <div><span></span><SvgComponent type='arrow-left' /></div>
         <div><SvgComponent type='arrow-right' /><span></span></div>
       </div>
+      <section className='ourclients'>
+        <li><span></span>Trusted by the industry leaders</li>
+        <h2>Our Clients</h2>
+        <div>
+          <div><img src={NewYorkTimes} alt=''></img></div>
+          <div><img src={YAHOO} alt=''></img></div>
+          <div><img src={TABLEUA} alt=''></img></div>
+          <div><img src={IMPOSSIBLE} alt=''></img></div>
+          <div><img src={UNESCO} alt=''></img></div>
+          <div><img src={KFC} alt=''></img></div>
+          <div><img src={CNN} alt=''></img></div>
+          <div><img src={WordPress} alt=''></img></div>
+          <div><img src={TheWeatherChannel} alt=''></img></div>
+          <div><img src={ESPN} alt=''></img></div>
+          <div><img src={FC} alt=''></img></div>
+          <div><img src={ANCESTRY} alt=''></img></div>
+          <div><img src={OneSoil} alt=''></img></div>
+          <div><img src={ReiCoop} alt=''></img></div>
+          <div><img src={AllTrails} alt=''></img></div>
+        </div>
+        <a href="#">View customers stories →</a>
+      </section>
     </section>
   )
 }
