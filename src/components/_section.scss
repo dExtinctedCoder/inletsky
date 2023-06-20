@@ -1,0 +1,49 @@
+@import '../scss/_variables';
+
+section.homepage-section {
+  gap: 100px;
+  color: $white;
+  &>.textbox {
+    flex-basis: 50%;
+    li {
+      background: $bluebg;
+    }
+    h2 {
+      font-size: $text-6xl;
+      font-weight: $font-bold;
+      margin-block: 10px 0;
+    }
+    h5 {
+      font-size: $text-xl;
+      font-weight: $font-normal;
+      margin: 32px 0 44px;
+    }
+  }
+  &>.imgbox {
+    flex-basis: 70%;
+    border-radius: 25px;
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    flex-direction: column !important;
+    gap: 50px;
+    &>.textbox {
+      h2 {
+        font-size: calc($text-3xl + $text-lg);
+        margin-block: 50px 0;
+      }
+      h5 {
+        font-size: $text-lg;
+        margin: 16px 0 32px;
+      }
+    }
+    &:nth-child(even) {
+      text-align: right;
+      li {
+        float: right;
+      }
+    }
+  }
+}
