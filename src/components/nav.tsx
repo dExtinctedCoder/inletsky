@@ -5,7 +5,7 @@ import { BiMenuAltRight } from 'react-icons/bi'
 
 const Nav = () => {
   return (
-    <section>
+    <section className='navbar'>
       <div className='logobox'><img src={LOGO} alt="inletsky" /></div>
       <nav>
         <span tabIndex={0}>SOLUTIONS <BsChevronDown fontSize={15} fontWeight={500} /></span>
