@@ -1,10 +1,10 @@
 import Hero from '../../components/hero'
 import SvgComponent from '../../components/svg'
+import Section from '../../components/section'
 import './_home.scss'
 import RAY from './assets/Group289.png'
 import SKY from './assets/Rectangle130.png'
 import GLOBE from './assets/Group290.png'
-
 import NewYorkTimes from './assets/TNYT.png'
 import KFC from './assets/kfc.png'
 import CNN from './assets/cnn.png'
@@ -20,6 +20,12 @@ import OneSoil from './assets/onesoil.png'
 import ReiCoop from './assets/rei.png'
 import ANCESTRY from './assets/ancestry.png'
 import IMPOSSIBLE from './assets/vector.png'
+import DESIGN from './assets/rectangle135design.png'
+import NAVIGATION from './assets/rectangle136nav.png'
+import STUDIO from './assets/rectangle136studio.png'
+import MAPS from './assets/rectangle136maps.png'
+import SEARCH from './assets/rectangle135search.png'
+import LINE from './assets/vector42rmap.png'
 
 // component for landing page
 const Home = () => {
@@ -71,6 +77,13 @@ const Home = () => {
           <div><img src={AllTrails} alt=''></img></div>
         </div>
         <a href="#">View customers stories →</a>
+      </section>
+      <section className='sectionbox' style={{ backgroundImage: `url(${LINE})` }}>
+        <Section btn='Design without limits' title='Design' text='Style your map with lines, polygons, labels, icons, patterns, extrusions, raster & terrain with hundreds of options and a powerful expression language, not only controlling all visual aspects through the zoom range but having the freedom to change them at any time dynamically.' link='Learn more about design  →' direction='row' align='flex-start' bg={DESIGN} alt=''></Section>
+        <Section btn='Design without limits' title='Navigation' text='Inletsky provides powerful routing engines, accurate, traffic-powered travel times, and intuitive turn-by-turn directions to help you build engaging navigation experiences.' link='more about navigate  →' direction='row-reverse' align='flex-end' bg={NAVIGATION} alt=''></Section>
+        <Section btn="See what's inside our studio" title='Studio' text='Inletsky Studio is like Photoshop, for maps. We give designers control over everything from colors and fonts, to 3D features and camera angles, to the pitch of the map as a car enters a turn.' link='know more about design  →' direction='row' align='flex-start' bg={STUDIO} alt=''></Section>
+        <Section btn='Experience our maps' title='Maps' text='Our APIs, SDKs, and live updating map data give developers tools to build better mapping, navigation, and search experiences across platforms.' link='more about maps  →' direction='row-reverse' align='flex-end' bg={MAPS} alt=''></Section>
+        <Section btn='Tell us what to explore' title='Search' text='Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.' link='discover search  →' direction='row' align='flex-start' bg={SEARCH} alt=''></Section>
       </section>
     </section>
   )
