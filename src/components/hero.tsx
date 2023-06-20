@@ -2,7 +2,7 @@ import './_hero.scss'
 import Nav from './nav'
 import BG from '../pages/home/assets/rm3j73batch2-16-011.png'
 import GLOBE from '../pages/home/assets/group284.png'
-import { HiArrowLongLeft } from 'react-icons/hi2'
+import SvgComponent from './svg'
 import { BsArrowRight } from 'react-icons/bs'
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
         <h5>BrainNet. GL JS is a Networking library for vector networking on  the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.</h5>
       </div>
       <div className='hero-scrolldown'>
-        <HiArrowLongLeft />
+        <SvgComponent type='arrow-left' />
         <span>Explore Now</span>
       </div>
       <div className='blur'></div>
