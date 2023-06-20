@@ -3,4 +3,107 @@
 section.homepage {
   display: block;
   padding: 0;
+  &>.networking {
+    background: $bluebg;
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .networking-img {
+      flex-basis: 25%;
+    }
+    .networking-card {
+      position: absolute;
+      color: $white;
+      left: 50%;
+      translate: -50%;
+      padding: 76px 80px;
+      background: rgb(28, 28, 28, 0.4);
+      border-radius: 42px;
+      li {
+        list-style: none;
+        font-weight: $font-normal;
+        font-size: $text-sm;
+        letter-spacing: 0.03em;
+        border: 2.83333px solid $red;
+        border-radius: 69.4167px;
+        padding: 8px 43px;
+        box-shadow: -1px -1px 10px $red;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        width: fit-content;
+        &>span {
+          display: block;
+          width: 7.4px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          background: $red;
+        }
+      }
+      h4 {
+        font-weight: $font-bold;
+        font-size: $text-3xl;
+      }
+      p {
+        font-weight: $font-normal;
+        font-size: $text-md;
+        line-height: 24px;
+        margin-block: 45px 51px;
+      }
+      a {
+        font-weight: $font-semibold;
+        font-size: $text-xsm;
+        text-transform: uppercase;
+        color: $red;
+        text-decoration: none;
+        // box-shadow: -1px -1px 20px $red;
+      }
+    }
+  }
+  .arrowbox {
+    background: $bluebg;
+    padding: 44px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    &>div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        width: 27px;
+        aspect-ratio: 1;
+        background: $red;
+        border-radius: 50%;
+        display: block;
+      }
+      .arrow-left {
+        translate: -15px;
+      }
+      .arrow-right {
+        translate: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 980px) {
+    &>nav, &>.ctabox {
+      display: none;
+    }
+    &>.networking {
+      padding: 12px 32px;
+      .networking-img {
+        display: none;
+      }
+      .networking-card {
+        width: 100%;
+        position: static;
+        translate: 0%;
+        padding: 56px 40px;
+        border-radius: 32px;
+      }
+    }
+  }
 }
