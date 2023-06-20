@@ -91,7 +91,7 @@ section.homepage {
     }
   }
   .ourclients {
-    padding: 76px 0;
+    padding: 76px 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +111,14 @@ section.homepage {
         width: fit-content;
       }
     }
+  }
+  .sectionbox {
+    padding: 0px 50px 72px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 112px;
+    background-repeat: no-repeat;
+    background-position: 52.5% 0;
   }
   @media screen and (max-width: 980px) {
     &>.networking {
