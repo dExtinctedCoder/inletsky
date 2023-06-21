@@ -25,7 +25,11 @@ import NAVIGATION from './assets/Rectangle136nav.png'
 import STUDIO from './assets/Rectangle136studio.png'
 import MAPS from './assets/Rectangle136maps.png'
 import SEARCH from './assets/Rectangle135search.png'
+import VISION from './assets/Rectangle136vision.png'
+import DATA from './assets/rectangle135data.png'
+import ATLAS from './assets/Rectangle136atlas.png'
 import LINE from './assets/Vector42rmap.png'
+import USER from './assets/Ellipse47dp.png'
 
 // component for landing page
 const Home = () => {
@@ -84,6 +88,106 @@ const Home = () => {
         <Section btn="See what's inside our studio" title='Studio' text='Inletsky Studio is like Photoshop, for maps. We give designers control over everything from colors and fonts, to 3D features and camera angles, to the pitch of the map as a car enters a turn.' link='know more about design  →' direction='row' align='flex-start' bg={STUDIO} alt=''></Section>
         <Section btn='Experience our maps' title='Maps' text='Our APIs, SDKs, and live updating map data give developers tools to build better mapping, navigation, and search experiences across platforms.' link='more about maps  →' direction='row-reverse' align='flex-end' bg={MAPS} alt=''></Section>
         <Section btn='Tell us what to explore' title='Search' text='Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.' link='discover search  →' direction='row' align='flex-start' bg={SEARCH} alt=''></Section>
+        <section className='testimonials'>
+          <li><span></span>Tell us what to explore</li>
+          <h2>Testimonials</h2>
+          <p>Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.</p>
+          <div className='testimonials-cardbox'>
+            <div>
+              <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div>
+              <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div>
+              <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div>
+              {/* <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div>
+              <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div>
+              <div className='testimonials-cardbox--card'>
+                <div className='testimonials-cardbox--card-info'>
+                  <img src={USER} alt="user-dp" />
+                  <span>Joe Smith</span>
+                </div>
+                <p>global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,</p>
+                <div className='testimonials-cardbox--card-rating'>
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-full' />
+                  <SvgComponent type='star-outline' />
+                </div>
+              </div> */}
+            </div>
+          </div>
+          <div className='arrowbox'>
+            <div><span></span><SvgComponent type='arrow-left' /></div>
+            <div><SvgComponent type='arrow-right' /><span></span></div>
+          </div>
+        </section>
+        <Section btn='The vision behind Inletsky' title='Vision' text="The Inletsky Vision SDK describes every curb, lane, street sign, and road hazard it sees as data. Developers use the SDK's AI-powered semantic segmentation, object detection, and classification to deliver precise navigation guidance, display driver assistance alerts, and detect and map road incidents." link='Discover Vision  →' direction='row-reverse' align='flex-end' bg={VISION} alt='vision'></Section>
+        <Section btn="Your data is our responsibility" title='Data' text='Our data is powered by hundreds of data sources, and a distributed global users base of more than half a billion monthly active users.' link='more about data  →' direction='row' align='flex-start' bg={DATA} alt='data'></Section>
+        <Section btn='Our Newest Product' title='Atlas' text='With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android.' link='Try atlas  →' direction='row-reverse' align='flex-end' bg={ATLAS} alt='atlas'></Section>
       </section>
     </section>
   )
