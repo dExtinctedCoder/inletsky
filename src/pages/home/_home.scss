@@ -4,6 +4,10 @@ section.homepage {
   display: block;
   padding: 0;
   background: $bluebg;
+  h2 {
+    font-size: $text-6xl;
+    font-weight: $font-bold;
+  }
   li {
     list-style: none;
     font-weight: $font-normal;
@@ -62,7 +66,6 @@ section.homepage {
         line-height: 24px;
         margin-block: 45px 51px;
       }
-      
     }
   }
   .arrowbox {
@@ -97,10 +100,6 @@ section.homepage {
     align-items: center;
     justify-content: center;
     color: $white;
-    h2 {
-      font-size: $text-6xl;
-      font-weight: $font-bold;
-    }
     &>div {
       margin-bottom: 72px;
       padding: 0 64px;
@@ -119,6 +118,128 @@ section.homepage {
     row-gap: 112px;
     background-repeat: no-repeat;
     background-position: 52.5% 0;
+    background-size: contain;
+    &>.testimonials {
+      background: rgba(26, 45, 71, 0.3);
+      backdrop-filter: blur(20px);
+      border-radius: 25px;
+      padding: 28px 72px;
+      color: $white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin: 0;
+        line-height: 92px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: $text-xl;
+        font-weight: $font-normal;
+        line-height: 32px;
+        max-width: 65ch;
+        margin-bottom: 24px;
+      }
+      &>.testimonials-cardbox {
+        overflow-x: hidden;
+        width: 100%;
+        &>div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          width: 100%;
+          overflow-x: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .testimonials-cardbox--card {
+            background: $black;
+            border-radius: 10px;
+            padding: 20px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 18px;
+            text-align: left;
+            .testimonials-cardbox--card-info {
+              display: flex;
+              justify-content: flex-start;
+              gap: 10px;
+              img {
+                width: 30px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+              }
+              span {
+                font-weight: $font-bold;
+                font-size: $text-lg;
+                line-height: 23px;
+                letter-spacing: -0.14px;
+              }
+            }
+            p {
+              font-weight: $font-normal;
+              font-size: $text-md;
+              line-height: 24px;
+              letter-spacing: -0.14px;
+              color: $gray2;
+              // max-width: 20ch;
+            }
+          }
+        }
+      }
+      &>.arrowbox {
+        margin-block: 0px;
+      }
+      @media screen and (max-width: 980px) {
+        padding: 32px 24px;
+        h2 {
+          font-size: calc($text-3xl + $text-md);
+        }
+        p {
+          font-size: $text-sm;
+          text-align: left;
+        }
+        &>.testimonials-cardbox {
+          &>div {
+            flex-wrap: wrap;
+            &>.testimonials-cardbox--card {
+              flex-grow: 1;
+              width: 100%;
+            }
+          }
+        }
+        &>.arrowbox {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 502px) {
+        h2 {
+          font-size: $text-xl;
+          line-height: 64px;
+        }
+        p {
+          font-size: $text-xsm;
+          line-height: 24px;
+        }
+        &>.testimonials-cardbox {
+          &>div {
+            &>.testimonials-cardbox--card {
+              p {
+                font-size: $text-xs;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .sectionbox {
+      background-size: cover;
+    }
   }
   @media screen and (max-width: 980px) {
     &>.networking {
