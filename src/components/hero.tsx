@@ -1,7 +1,7 @@
 import './_hero.scss'
 import Nav from './nav'
 import BG from '../pages/home/assets/rm3j73batch2-16-011.png'
-import GLOBE from '../pages/home/assets/group284.png'
+import GLOBE from '../pages/home/assets/Group284.png'
 import SvgComponent from './svg'
 import { BsArrowRight } from 'react-icons/bs'
 

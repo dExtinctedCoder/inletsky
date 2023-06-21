@@ -20,12 +20,12 @@ import OneSoil from './assets/onesoil.png'
 import ReiCoop from './assets/rei.png'
 import ANCESTRY from './assets/ancestry.png'
 import IMPOSSIBLE from './assets/imps.png'
-import DESIGN from './assets/rectangle135design.png'
-import NAVIGATION from './assets/rectangle136nav.png'
-import STUDIO from './assets/rectangle136studio.png'
-import MAPS from './assets/rectangle136maps.png'
-import SEARCH from './assets/rectangle135search.png'
-import LINE from './assets/vector42rmap.png'
+import DESIGN from './assets/Rectangle135design.png'
+import NAVIGATION from './assets/Rectangle136nav.png'
+import STUDIO from './assets/Rectangle136studio.png'
+import MAPS from './assets/Rectangle136maps.png'
+import SEARCH from './assets/Rectangle135search.png'
+import LINE from './assets/Vector42rmap.png'
 
 // component for landing page
 const Home = () => {
