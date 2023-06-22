@@ -1,0 +1,119 @@
+@import '../scss/variables';
+
+footer {
+  color: $white;
+  padding: 64px 60px 0px;
+  .control {
+    display: flex;
+    column-gap: 150px;
+    align-items: center;
+    padding: 64px 0px 24px;
+    border-top: 1px solid gray;
+    &>div {
+      width: 66px;
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+      color: $greyfooter;
+      text-align: left;
+      padding: 0;
+      a {
+        color: $greyfooter;
+      }
+    }
+    &>ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      &>ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        h5 {
+          font-weight: $font-bold;
+          font-size: $text-xs;
+          line-height: 22px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: $grey3;
+        }
+        li {
+          font-weight: $font-normal;
+          font-size: $text-xs;
+          line-height: 100%;
+          letter-spacing: 0.03em;
+        }
+      }
+    }
+    a {
+      &:hover, &:focus, &:active {
+        outline: 2px dashed $red;
+      } 
+    }
+  }
+  &>div:not(.control) {
+    padding: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      a, span {
+        font-weight: $font-normal;
+        font-size: $text-xs;
+        line-height: 22px;
+        letter-spacing: -0.14px;
+        color: $greyfooter;
+        text-decoration: none;
+      }
+    }
+    .footer-socials {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      a {
+        font-size: 18px;
+        color: #8E9CA1;
+      }
+    }
+    a {
+      &:hover, &:focus, &:active {
+        color: $red;
+        outline: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .control {
+      flex-direction: column;
+      row-gap: 32px;
+      &>ul {
+        flex-direction: column;
+        row-gap: 16px;
+        ul {
+          text-align: center;
+          li {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    &>div:not(.control) {
+      flex-direction: column;
+      row-gap: 32px;
+    }
+  }
+}
