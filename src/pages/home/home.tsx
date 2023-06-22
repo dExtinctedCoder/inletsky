@@ -31,6 +31,7 @@ import ATLAS from './assets/Rectangle136atlas.png'
 import LINE from './assets/Vector42rmap.png'
 import USER from './assets/Ellipse47dp.png'
 import Faqs from '../../components/faqs'
+import LINES from './assets/5f7cba0d44a746f394afdd86_topo-lines.svgrtgs.png'
 
 // component for landing page
 const Home = () => {
@@ -191,6 +192,17 @@ const Home = () => {
         <Section btn='Our Newest Product' title='Atlas' text='With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android.' link='Try atlas  →' direction='row-reverse' align='flex-end' bg={ATLAS} alt='atlas'></Section>
       </section>
       <Faqs />
+      <section className='rtgs'>
+        <div style={{ backgroundImage: `url(${LINES})` }}>
+          <li><span></span>You're Good to Go</li>
+          <h2>Ready to Get Started</h2>
+          <p>Create an account or talk to one of our experts.</p>
+          <div>
+            <a href='#'>Login →</a>
+            <a href='#'>signup →</a>
+          </div>
+        </div>
+      </section>
     </section>
   )
 }
