@@ -1,4 +1,7 @@
 // root entry point for import of all component style file
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Inter', sans-serif;
   padding: 0;
