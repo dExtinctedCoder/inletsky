@@ -1,0 +1,93 @@
+@import '../scss/variables';
+
+section.faqs {
+  color: $white;
+  display: flex;
+  align-items: center;
+  padding: 72px 84px;
+  flex-direction: column;
+  &>ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+      padding: 16px 32px;
+      width: 90%;
+      background: $blue1;
+      border-bottom: 1px solid $grey3;
+      &:first-child {
+        border-top: 1px solid $grey3;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:not(:first-child) {
+        background: transparent;
+        p {
+          display: none;
+        }
+      }
+      h4 {
+        font-weight: $font-normal;
+        font-size: $text-2xl;
+        line-height: 0px;
+        letter-spacing: -0.14px;
+        color: $grey3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          color: $blue2;
+          font-size: $text-3xl;
+          cursor: pointer;
+          display: block;
+          &:active, &:focus, &:hover {
+            color: $red;
+            outline: 0;
+          }
+        }
+      }
+      p {
+        font-weight: $font-normal;
+        font-size: $text-xl;
+        line-height: 32px;
+        letter-spacing: -0.14px;
+        color: $gray2;
+      }
+      @media screen and (max-width: 980px) {
+        padding: 8px 18px;
+        width: 100%;
+        h4 {
+          font-size: $text-xl;
+        }
+        p {
+          font-size: $text-lg;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 48px 16px;
+    ul {
+      display: block;
+      li {
+        padding-inline: 8px;
+        h4 {
+          font-size: $text-md;
+          span {
+            font-size: inherit;
+          }
+        }
+        p {
+          font-size: $text-sm;
+        }
+      }
+    }
+  }
+}
