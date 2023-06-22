@@ -31,6 +31,7 @@ import ATLAS from './assets/Rectangle136atlas.png'
 import LINE from './assets/Vector42rmap.png'
 import USER from './assets/Ellipse47dp.png'
 import Faqs from '../../components/faqs'
+import Footer from '../../components/footer'
 import LINES from './assets/5f7cba0d44a746f394afdd86_topo-lines.svgrtgs.png'
 
 // component for landing page
@@ -203,6 +204,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </section>
   )
 }
