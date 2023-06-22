@@ -30,6 +30,7 @@ import DATA from './assets/rectangle135data.png'
 import ATLAS from './assets/Rectangle136atlas.png'
 import LINE from './assets/Vector42rmap.png'
 import USER from './assets/Ellipse47dp.png'
+import Faqs from '../../components/faqs'
 
 // component for landing page
 const Home = () => {
@@ -189,6 +190,7 @@ const Home = () => {
         <Section btn="Your data is our responsibility" title='Data' text='Our data is powered by hundreds of data sources, and a distributed global users base of more than half a billion monthly active users.' link='more about data  →' direction='row' align='flex-start' bg={DATA} alt='data'></Section>
         <Section btn='Our Newest Product' title='Atlas' text='With Atlas, you can self-host Inletsky maps and geocoding APIs, Streets, Satellite, and Terrain tilesets, and Inletsky Studio on your network, behind a firewall, or even air-gapped. Use Atlas to power on-premises applications using Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and Android.' link='Try atlas  →' direction='row-reverse' align='flex-end' bg={ATLAS} alt='atlas'></Section>
       </section>
+      <Faqs />
     </section>
   )
 }
